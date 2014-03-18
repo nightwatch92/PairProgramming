@@ -18,13 +18,14 @@ export
 
 EMAIL:
 ------------
-email
-name (of the person)
+email - check
+name (of the person) - check
 
 methods:
-get_email
-get_name
-new_email
+get_email-check
+get_name - check
+new_email - check
+
 
 
 
