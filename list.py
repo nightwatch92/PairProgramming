@@ -16,4 +16,8 @@ class List():
         return self.emails
 
     def show_list(self, index):
-        pass
+        
+        message = ""
+        message += 
+        # list1.add_email("Ivo", "ivo@mail.bg")
+        # result2 = "[1] Ivo - ivo@mail.bg"

@@ -31,6 +31,8 @@ new_email - check
 
 Actions with both:
 --------------
+list_holder - a list of lists of emails
+add lists to list_holder
 show_lists
 show_lists_with this email
 help
