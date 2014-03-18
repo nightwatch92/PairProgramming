@@ -1,0 +1,38 @@
+LIST:
+---------
+
+list-name
+a list of emails
+list_index
+
+methods:
+show_list 
+get_list_name
+add_mail
+create_list
+search_for_email
+export 
+
+
+
+EMAIL:
+------------
+email
+name (of the person)
+
+methods:
+get_email
+get_name
+new_email
+
+
+
+Actions with both:
+--------------
+show_lists
+show_lists_with this email
+help
+exit
+merge_lists
+
+
