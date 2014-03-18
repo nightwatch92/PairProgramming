@@ -23,7 +23,8 @@ name (of the person) - check
 methods:
 get_email-check
 get_name - check
-new_email
+new_email - check
+
 
 
 
