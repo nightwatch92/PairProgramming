@@ -13,6 +13,8 @@ class Mail():
         return self.email
    
     def add_email_name(self):
+
+        self.get_email()
         
         add_name = self.name 
         add_email = self.email
