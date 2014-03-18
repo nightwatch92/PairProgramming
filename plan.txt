@@ -7,8 +7,9 @@ list_index
 
 methods:
 show_list 
-get_list_name
-add_mail
+get_list_name - check
+get_list_index - check
+add_mail_to_list - check
 create_list
 search_for_email
 export 
