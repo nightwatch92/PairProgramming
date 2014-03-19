@@ -17,7 +17,11 @@ class MailTst(unittest.TestCase):
         self.assertEqual("Djangoo@yahoo.com", self.mail.get_email())
 
     def test_add_email_list(self):
-        self.assertEqual(('Django', 'Djangoo@yahoo.com'),self.mail.add_email_name())
+        
+        self.assertEqual([['Django','Djangoo@yahoo.com']] , self.mail.add_email_name("Django", "Djangoo@yahoo.com"))
+        self.assertEqual([['Django','Djangoo@yahoo.com'], ['Danaila', 'Devitoo@aaa.com']]  , self.mail.add_email_name('Danaila', 'Devitoo@aaa.com'))
+        self.assertEqual([['Django','Djangoo@yahoo.com'], ['Danaila', 'Devitoo@aaa.com'], ['Ivan', 'iVan@notMac.com']]  , self.mail.add_email_name('Ivan', 'iVan@notMac.com'))
+
 
     def test_dictionary(self):
         self.assertEqual({'Djangoo@yahoo.com': 'Django'},self.mail.dictionary())

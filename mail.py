@@ -4,6 +4,7 @@ class Mail():
     def __init__(self, name, email):
         self.name = name
         self.email = email
+        self.container = []
 
     def get_name(self):
 
@@ -12,16 +13,9 @@ class Mail():
     def get_email(self):
         return self.email
    
-    def add_email_name(self):
-
-        self.get_email()
-        
-        add_name = self.name 
-        add_email = self.email
-        list_of_both = list()
-        list_of_both.append(add_name)
-        list_of_both.append(add_email)
-        return tuple(list_of_both)
+    def add_email_name(self, name, email):
+        self.container.append([name, email])
+        return self.container
 
     def dictionary(self):
         name_and_email = { self.email : self.name }
