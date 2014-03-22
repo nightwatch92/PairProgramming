@@ -16,7 +16,7 @@ class Converter():
     def convert_to_dict(self):
         self.emails = self.mailList.get_list_emails()
         self.emails_dict = {}
-        
+
         for i in range (len(self.emails)):
             self.emails_dict[self.emails[i][0]] = self.emails[i][1]
         return self.emails_dict
@@ -27,4 +27,4 @@ class Converter():
         content = ""
         self.emails_dict = self.convert_to_dict()
         content = json.dumps([self.mailList_name, self.emails_dict], indent=4, sort_keys = True, separators=(',', ':'))
-        return contentd
+        return content
